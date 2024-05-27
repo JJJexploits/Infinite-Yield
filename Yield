@@ -1,19 +1,26 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 
 --Properties:
 
-Frame.Parent = game.StarterGui.ScreenGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
 Frame.Active = true
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 Frame.BackgroundTransparency = 0.500
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.421895415, 0, 0.399222642, 0)
+Frame.Position = UDim2.new(0.0507469587, 0, 0.922538698, 0)
 Frame.Size = UDim2.new(0.0724556521, 0, 0.127115726, 0)
-Frame.Draggable = true
-Frame.Visible = true
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(142, 255, 146)
@@ -25,8 +32,3 @@ TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "Infnite yield"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
-Frame.Position = UDim2.New(0,0,0,0)
-
-TextButton.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))
-end)
