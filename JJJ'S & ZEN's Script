@@ -145,11 +145,11 @@ Intro.TextColor3 = Color3.fromRGB(255, 255, 255)
 Intro.TextScaled = true
 Intro.TextSize = 14.000
 Intro.TextWrapped = true
-wait(3)
+wait(4)
 Intro.Visible = true
-wait(2)
+wait(4)
 Intro.Visible = false
-wait(1)
+wait(4)
 
 --Properties:
 
