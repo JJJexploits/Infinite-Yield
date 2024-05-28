@@ -38,7 +38,7 @@ local JJJ = Instance.new("TextLabel")
 local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
 local Credits_2 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
-Hack.ResetOnSpawn = false
+
 --Properties:
 
 Hack.Name = "Hack"
