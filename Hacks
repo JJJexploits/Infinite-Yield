@@ -4,6 +4,7 @@
 -- Instances:
 
 
+
 local Hack = Instance.new("ScreenGui")
 local MainHolder = Instance.new("ImageLabel")
 local Nerd = Instance.new("Folder")
@@ -53,7 +54,7 @@ MainHolder.ClipsDescendants = true
 MainHolder.Position = UDim2.new(0.0107376287, 0, 0.209844559, 0)
 MainHolder.Size = UDim2.new(0.214416429, 0, 0.608808279, 0)
 MainHolder.Image = "rbxassetid://17641355089"
-MainHolder.ImageTransparency = 0.900z
+MainHolder.ImageTransparency = 0.900
 MainHolder.ScaleType = Enum.ScaleType.Tile
 MainHolder.TileSize = UDim2.new(0.0399999991, 0, 0.0399999991, 0)
 
