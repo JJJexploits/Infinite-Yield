@@ -1,0 +1,346 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+
+local Hack = Instance.new("ScreenGui")
+local MainHolder = Instance.new("ImageLabel")
+local Nerd = Instance.new("Folder")
+local TextLabel = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UICorner = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local HackButtons = Instance.new("Folder")
+local Fly = Instance.new("TextButton")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local FreeEmotes = Instance.new("TextButton")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local AimLock = Instance.new("TextButton")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local AntiLock = Instance.new("TextButton")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local ESP = Instance.new("TextButton")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local HackCatagories = Instance.new("Folder")
+local Character = Instance.new("TextLabel")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local Aimlock = Instance.new("TextLabel")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local Visuals = Instance.new("TextLabel")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local Credits = Instance.new("TextLabel")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local Zen = Instance.new("TextLabel")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
+local JJJ = Instance.new("TextLabel")
+local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
+local Credits_2 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+Hack.Name = "Hack"
+Hack.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Hack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainHolder.Name = "MainHolder"
+MainHolder.Parent = Hack
+MainHolder.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+MainHolder.BorderColor3 = Color3.fromRGB(163, 49, 54)
+MainHolder.BorderSizePixel = 5
+MainHolder.ClipsDescendants = true
+MainHolder.Position = UDim2.new(0.0107376287, 0, 0.209844559, 0)
+MainHolder.Size = UDim2.new(0.214416429, 0, 0.608808279, 0)
+MainHolder.Image = "rbxassetid://17641355089"
+MainHolder.ImageTransparency = 0.900z
+MainHolder.ScaleType = Enum.ScaleType.Tile
+MainHolder.TileSize = UDim2.new(0.0399999991, 0, 0.0399999991, 0)
+
+Nerd.Name = "Nerd"
+Nerd.Parent = MainHolder
+
+TextLabel.Parent = Nerd
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.332547516, 0, 0.667104363, 0)
+TextLabel.Size = UDim2.new(0.532599509, 0, 0.332895547, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "🤓"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = TextLabel
+UIAspectRatioConstraint.AspectRatio = 0.680
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = MainHolder
+
+UIAspectRatioConstraint_2.Parent = MainHolder
+UIAspectRatioConstraint_2.AspectRatio = 0.62
+
+
+HackButtons.Name = "HackButtons"
+HackButtons.Parent = MainHolder
+
+Fly.Name = "Fly"
+Fly.Parent = HackButtons
+Fly.BackgroundColor3 = Color3.fromRGB(255, 42, 180)
+Fly.BorderColor3 = Color3.fromRGB(95, 25, 89)
+Fly.BorderSizePixel = 2
+Fly.Position = UDim2.new(0.0438327342, 0, 0.163934425, 0)
+Fly.Size = UDim2.new(0.335307449, 0, 0.0533008203, 0)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextScaled = true
+Fly.TextSize = 23.000
+Fly.TextStrokeTransparency = 0.000
+Fly.TextWrapped = true
+
+UIAspectRatioConstraint_3.Parent = Fly
+UIAspectRatioConstraint_3.AspectRatio = 4.278
+
+FreeEmotes.Name = "FreeEmotes"
+FreeEmotes.Parent = HackButtons
+FreeEmotes.BackgroundColor3 = Color3.fromRGB(255, 42, 180)
+FreeEmotes.BorderColor3 = Color3.fromRGB(95, 25, 89)
+FreeEmotes.BorderSizePixel = 2
+FreeEmotes.Position = UDim2.new(0.409836024, 0, 0.163934425, 0)
+FreeEmotes.Size = UDim2.new(0.335307449, 0, 0.0533008203, 0)
+FreeEmotes.Font = Enum.Font.SourceSans
+FreeEmotes.Text = "FREE EMOTES"
+FreeEmotes.TextColor3 = Color3.fromRGB(255, 255, 255)
+FreeEmotes.TextScaled = true
+FreeEmotes.TextSize = 23.000
+FreeEmotes.TextStrokeTransparency = 0.000
+FreeEmotes.TextWrapped = true
+
+UIAspectRatioConstraint_4.Parent = FreeEmotes
+UIAspectRatioConstraint_4.AspectRatio = 4.278
+
+AimLock.Name = "AimLock"
+AimLock.Parent = HackButtons
+AimLock.BackgroundColor3 = Color3.fromRGB(255, 42, 180)
+AimLock.BorderColor3 = Color3.fromRGB(95, 25, 89)
+AimLock.BorderSizePixel = 2
+AimLock.Position = UDim2.new(0.0438327007, 0, 0.309985101, 0)
+AimLock.Size = UDim2.new(0.335307449, 0, 0.0533008203, 0)
+AimLock.Font = Enum.Font.SourceSans
+AimLock.Text = "AimLock"
+AimLock.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimLock.TextScaled = true
+AimLock.TextSize = 23.000
+AimLock.TextStrokeTransparency = 0.000
+AimLock.TextWrapped = true
+
+UIAspectRatioConstraint_5.Parent = AimLock
+UIAspectRatioConstraint_5.AspectRatio = 4.278
+
+AntiLock.Name = "AntiLock"
+AntiLock.Parent = HackButtons
+AntiLock.BackgroundColor3 = Color3.fromRGB(255, 42, 180)
+AntiLock.BorderColor3 = Color3.fromRGB(95, 25, 89)
+AntiLock.BorderSizePixel = 2
+AntiLock.Position = UDim2.new(0.409836024, 0, 0.309985101, 0)
+AntiLock.Size = UDim2.new(0.335307449, 0, 0.0533008203, 0)
+AntiLock.Font = Enum.Font.SourceSans
+AntiLock.Text = "Anti-Lock"
+AntiLock.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiLock.TextScaled = true
+AntiLock.TextSize = 23.000
+AntiLock.TextStrokeTransparency = 0.000
+AntiLock.TextWrapped = true
+
+UIAspectRatioConstraint_6.Parent = AntiLock
+UIAspectRatioConstraint_6.AspectRatio = 4.278
+
+ESP.Name = "ESP"
+ESP.Parent = HackButtons
+ESP.BackgroundColor3 = Color3.fromRGB(255, 42, 180)
+ESP.BorderColor3 = Color3.fromRGB(95, 25, 89)
+ESP.BorderSizePixel = 2
+ESP.Position = UDim2.new(0.0438327007, 0, 0.457526088, 0)
+ESP.Size = UDim2.new(0.335307449, 0, 0.0533008203, 0)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextScaled = true
+ESP.TextSize = 23.000
+ESP.TextStrokeTransparency = 0.000
+ESP.TextWrapped = true
+
+UIAspectRatioConstraint_7.Parent = ESP
+UIAspectRatioConstraint_7.AspectRatio = 4.278
+
+HackCatagories.Name = "HackCatagories"
+HackCatagories.Parent = MainHolder
+
+Character.Name = "Character"
+Character.Parent = HackCatagories
+Character.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Character.BackgroundTransparency = 1.000
+Character.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Character.BorderSizePixel = 0
+Character.Position = UDim2.new(0.0438327342, 0, 0.0953800306, 0)
+Character.Size = UDim2.new(0.307002276, 0, 0.035533879, 0)
+Character.Font = Enum.Font.Sarpanch
+Character.Text = "Character"
+Character.TextColor3 = Color3.fromRGB(255, 255, 255)
+Character.TextScaled = true
+Character.TextSize = 14.000
+Character.TextStrokeTransparency = 0.000
+Character.TextWrapped = true
+
+UIAspectRatioConstraint_8.Parent = Character
+UIAspectRatioConstraint_8.AspectRatio = 5.875
+
+Aimlock.Name = "Aimlock"
+Aimlock.Parent = HackCatagories
+Aimlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Aimlock.BackgroundTransparency = 1.000
+Aimlock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Aimlock.BorderSizePixel = 0
+Aimlock.Position = UDim2.new(0.0438327342, 0, 0.244411319, 0)
+Aimlock.Size = UDim2.new(0.307002276, 0, 0.035533879, 0)
+Aimlock.Font = Enum.Font.Sarpanch
+Aimlock.Text = "Aim-Lock"
+Aimlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimlock.TextScaled = true
+Aimlock.TextSize = 14.000
+Aimlock.TextStrokeTransparency = 0.000
+Aimlock.TextWrapped = true
+
+UIAspectRatioConstraint_9.Parent = Aimlock
+UIAspectRatioConstraint_9.AspectRatio = 5.875
+
+Visuals.Name = "Visuals"
+Visuals.Parent = HackCatagories
+Visuals.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Visuals.BackgroundTransparency = 1.000
+Visuals.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Visuals.BorderSizePixel = 0
+Visuals.Position = UDim2.new(0.0416410975, 0, 0.394932926, 0)
+Visuals.Size = UDim2.new(0.307002276, 0, 0.035533879, 0)
+Visuals.Font = Enum.Font.Sarpanch
+Visuals.Text = "Visuals"
+Visuals.TextColor3 = Color3.fromRGB(255, 255, 255)
+Visuals.TextScaled = true
+Visuals.TextSize = 14.000
+Visuals.TextStrokeTransparency = 0.000
+Visuals.TextWrapped = true
+
+UIAspectRatioConstraint_10.Parent = Visuals
+UIAspectRatioConstraint_10.AspectRatio = 5.875
+
+Credits.Name = "Credits"
+Credits.Parent = MainHolder
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.0242368504, 0, 0.652077436, 0)
+Credits.Size = UDim2.new(0.307002276, 0, 0.035533879, 0)
+Credits.Font = Enum.Font.Sarpanch
+Credits.Text = "Credits:"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextStrokeTransparency = 0.000
+Credits.TextWrapped = true
+
+UIAspectRatioConstraint_11.Parent = Credits
+UIAspectRatioConstraint_11.AspectRatio = 5.875
+
+Zen.Name = "Zen"
+Zen.Parent = MainHolder
+Zen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Zen.BackgroundTransparency = 1.000
+Zen.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Zen.BorderSizePixel = 0
+Zen.Position = UDim2.new(0.263742149, 0, 0.652077436, 0)
+Zen.Size = UDim2.new(0.307002276, 0, 0.035533879, 0)
+Zen.Font = Enum.Font.Sarpanch
+Zen.Text = "Zen(found scripts)"
+Zen.TextColor3 = Color3.fromRGB(255, 255, 255)
+Zen.TextScaled = true
+Zen.TextSize = 14.000
+Zen.TextStrokeTransparency = 0.000
+Zen.TextWrapped = true
+
+UIAspectRatioConstraint_12.Parent = Zen
+UIAspectRatioConstraint_12.AspectRatio = 5.875
+
+JJJ.Name = "JJJ"
+JJJ.Parent = MainHolder
+JJJ.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JJJ.BackgroundTransparency = 1.000
+JJJ.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JJJ.BorderSizePixel = 0
+JJJ.Position = UDim2.new(0.570744455, 0, 0.652077436, 0)
+JJJ.Size = UDim2.new(0.307002276, 0, 0.035533879, 0)
+JJJ.Font = Enum.Font.Sarpanch
+JJJ.Text = "JJJ(scripted)"
+JJJ.TextColor3 = Color3.fromRGB(255, 255, 255)
+JJJ.TextScaled = true
+JJJ.TextSize = 14.000
+JJJ.TextStrokeTransparency = 0.000
+JJJ.TextWrapped = true
+
+UIAspectRatioConstraint_13.Parent = JJJ
+UIAspectRatioConstraint_13.AspectRatio = 5.875
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = MainHolder
+Credits_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits_2.BackgroundTransparency = 1.000
+Credits_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits_2.BorderSizePixel = 0
+Credits_2.Position = UDim2.new(0.0242368504, 0, 0.0109870182, 0)
+Credits_2.Size = UDim2.new(0.452882767, 0, 0.0695871785, 0)
+Credits_2.Font = Enum.Font.Sarpanch
+Credits_2.Text = "JJJ,ZENS CLIENT 1.0"
+Credits_2.TextColor3 = Color3.fromRGB(166, 41, 255)
+Credits_2.TextScaled = true
+Credits_2.TextSize = 14.000
+Credits_2.TextStrokeTransparency = 0.000
+Credits_2.TextWrapped = true
+
+UIAspectRatioConstraint_14.Parent = Credits_2
+UIAspectRatioConstraint_14.AspectRatio = 5.875
+
+Fly.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+FreeEmotes.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
+end)	
+
+AimLock.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JJJexploits/Infinite-Yield/main/Aimlock"))()
+end)
+AntiLock.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/wx9xWkGN"))()
+end)
+ESP.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/7K1Jhmck"))()
+end)
+
+local UserInputService = game:GetService("UserInputService")
+
+
+
+
+local UserInputService = game:GetService("UserInputService")
+
+
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	if input.KeyCode == Enum.KeyCode.O and not gameProcessed then
+		MainHolder.Visible = not MainHolder.Visible
+	end
+	
+end)
