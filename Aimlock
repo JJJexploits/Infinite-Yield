@@ -36,7 +36,7 @@ end
 game.StarterGui:SetCore(
 	"SendNotification",
 	{
-		Title = "NovaV1",
+		Title = "JJJ,ZEN",
 		Text = "Loading . . .",
 	}
 )
@@ -45,14 +45,14 @@ game.StarterGui:SetCore(
 	"SendNotification",
 	{
 		Title = "Made By",
-		Text = "wussrunsfoxxy#1241",
+		Text = "JJJ",
 	}
 )
 wait(1)
 game.StarterGui:SetCore(
 	"SendNotification",
 	{
-		Title = "NovaV1",
+		Title = "JJJ,ZEN",
 		Text = "Loaded!",
 	}
 )
@@ -62,8 +62,8 @@ game.StarterGui:SetCore(
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/slattisbabygirl/cattoware/main/Wcatto.lua"))()
     local NotifyLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))()
     local Notify = NotifyLibrary.Notify
-    Library.theme.accentcolor = Color3.fromRGB(255, 0, 0)
-    Library.theme.accentcolor2 = Color3.fromRGB(255, 0, 0)
+    Library.theme.accentcolor = Color3.fromRGB(255,0,255)
+    Library.theme.accentcolor2 = Color3.fromRGB(255,0,255
 
 --- TABS  ---
     local Window = Library:CreateWindow("NerdWare", Vector2.new(492, 598), Enum.KeyCode.RightShift)
