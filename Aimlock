@@ -63,7 +63,7 @@ game.StarterGui:SetCore(
     local NotifyLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))()
     local Notify = NotifyLibrary.Notify
     Library.theme.accentcolor = Color3.fromRGB(255,0,255)
-    Library.theme.accentcolor2 = Color3.fromRGB(255,0,255
+    Library.theme.accentcolor2 = Color3.fromRGB(255,0,255)
 
 --- TABS  ---
     local Window = Library:CreateWindow("NerdWare", Vector2.new(492, 598), Enum.KeyCode.RightShift)
