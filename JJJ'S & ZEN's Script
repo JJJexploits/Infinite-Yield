@@ -128,6 +128,28 @@ local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
 local UIAspectRatioConstraint_34 = Instance.new("UIAspectRatioConstraint")
 local UIAspectRatioConstraint_35 = Instance.new("UIAspectRatioConstraint")
 local UIAspectRatioConstraint_36 = Instance.new("UIAspectRatioConstraint")
+local Nerd = Instance.new("Folder")
+local Intro = Instance.new("TextLabel")
+Intro.Name = "Intro"
+Intro.Parent = Nerd
+Intro.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Intro.BackgroundTransparency = 1.000
+Intro.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Intro.BorderSizePixel = 0
+Intro.Position = UDim2.new(0.461718023, 0, 0.487046629, 0)
+Intro.Size = UDim2.new(0, 164, 0, 30)
+Intro.Visible = false
+Intro.Font = Enum.Font.Unknown
+Intro.Text = "🤓NERD🤓"
+Intro.TextColor3 = Color3.fromRGB(255, 255, 255)
+Intro.TextScaled = true
+Intro.TextSize = 14.000
+Intro.TextWrapped = true
+wait(3)
+Intro.Visible = true
+wait(2)
+Intro.Visible = false
+wait(1)
 
 --Properties:
 
@@ -823,3 +845,7 @@ UIAspectRatioConstraint_35.AspectRatio = 0.615
 
 UIAspectRatioConstraint_36.Parent = CharacterTopBar
 UIAspectRatioConstraint_36.AspectRatio = 5.400
+
+Nerd.Name = "Nerd"
+Nerd.Parent = JJJZENSHACKCLIENT
+
