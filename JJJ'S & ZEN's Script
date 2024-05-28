@@ -129,35 +129,21 @@ local UIAspectRatioConstraint_34 = Instance.new("UIAspectRatioConstraint")
 local UIAspectRatioConstraint_35 = Instance.new("UIAspectRatioConstraint")
 local UIAspectRatioConstraint_36 = Instance.new("UIAspectRatioConstraint")
 local Nerd = Instance.new("Folder")
-local Intro = Instance.new("TextLabel")
-Intro.Name = "Intro"
-Intro.Parent = Nerd
-Intro.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Intro.BackgroundTransparency = 1.000
-Intro.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Intro.BorderSizePixel = 0
-Intro.Position = UDim2.new(0.461718023, 0, 0.487046629, 0)
-Intro.Size = UDim2.new(0, 164, 0, 30)
-Intro.Visible = true
-Intro.Font = Enum.Font.Unknown
-Intro.Text = "🤓NERD🤓"
-Intro.TextColor3 = Color3.fromRGB(255, 255, 255)
-Intro.TextScaled = true
-Intro.TextSize = 14.000
-Intro.TextWrapped = true
-Intro.TextTransparency = 1
-wait(1)
-Intro.TextTransparency = 0
-wait(4)
-Intro.TextTransparency = 1
-wait(1)
+local sigmasound = Instance.new("Sound")
+sigmasound.SoundId = "rbxassetid://17650685425"
+sigmasound.Parent = game.SoundService
+
+JJJZENSHACKCLIENT.ResetOnSpawn = false
 
 --Properties:
-
+if sigmasound.IsLoaded then
+	sigmasound:Play()
+end
 JJJZENSHACKCLIENT.Name = "JJJZENSHACKCLIENT"
 JJJZENSHACKCLIENT.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 JJJZENSHACKCLIENT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 JJJZENSHACKCLIENT.ResetOnSpawn = false
+
 
 UIListLayout.Parent = JJJZENSHACKCLIENT
 UIListLayout.FillDirection = Enum.FillDirection.Horizontal
@@ -849,4 +835,139 @@ UIAspectRatioConstraint_36.AspectRatio = 5.400
 
 Nerd.Name = "Nerd"
 Nerd.Parent = JJJZENSHACKCLIENT
+
+Freecam_2.MouseEnter:Connect(function()
+	Freecam_2.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+Freecam_2.MouseEnter:Connect(function()
+	Freecam_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+end)
+
+Freecam.MouseEnter:Connect(function()
+	Freecam.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+Freecam.MouseLeave:Connect(function()
+	Freecam.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+Freecam.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/v3Vxf5E1"))()
+end)
+ESP.MouseEnter:Connect(function()
+	ESP.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+ESP.MouseLeave:Connect(function()
+	ESP.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+ESP.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JJJexploits/Infinite-Yield/main/ESP"))()
+end)
+Freecam_3.MouseEnter:Connect(function()
+	Freecam_3.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+Freecam_3.MouseLeave:Connect(function()
+	Freecam_3.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+Freecam_3.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/wjbY2xp1"))()
+end)
+AntiLock.MouseEnter:Connect(function()
+	AntiLock.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+AntiLock.MouseLeave:Connect(function()
+	AntiLock.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+AntiLock.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/wx9xWkGN"))()
+end)
+Fly.MouseEnter:Connect(function()
+	Fly.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+Fly.MouseLeave:Connect(function()
+	Fly.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+Fly.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/wx9xWkGN"))()
+end)
+FreeMacro.MouseEnter:Connect(function()
+	FreeMacro.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+FreeMacro.MouseLeave:Connect(function()
+	FreeMacro.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+FreeMacro.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://github.com/BakerBo1/Tpwalk.V4/blob/main/TpWa"))()
+end)
+AimLock.MouseEnter:Connect(function()
+	AimLock.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+AimLock.MouseLeave:Connect(function()
+	AimLock.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+AimLock.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JJJexploits/Infinite-Yield/main/Aimlock"))()
+end)
+SilentAim.MouseEnter:Connect(function()
+	SilentAim.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+
+SilentAim.MouseLeave:Connect(function()
+	SilentAim.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+SilentAim.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://github.com/JJJexploits/Infinite-Yield/blob/main/d"))()
+end)
+Infiniteyield.MouseEnter:Connect(function()
+	Infiniteyield.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+Infiniteyield.MouseLeave:Connect(function()
+	Infiniteyield.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+Infiniteyield.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+Infiniteyield_2.MouseEnter:Connect(function()
+	Infiniteyield_2.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+Infiniteyield_2.MouseLeave:Connect(function()
+	Infiniteyield_2.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+Infiniteyield_2.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/RXdkiui5"))()
+end)
+InfiniteJump.MouseEnter:Connect(function()
+	InfiniteJump.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+InfiniteJump.MouseLeave:Connect(function()
+	InfiniteJump.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+InfiniteJump.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/y3mdVu9i"))()
+end)
+Fling.MouseEnter:Connect(function()
+	Fling.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+Fling.MouseLeave:Connect(function()
+	Fling.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+Fling.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://github.com/Rogg15/fe-stuff/blob/main/Fe%20touch%20fling"))()
+end)
+NoClip.MouseEnter:Connect(function()
+	NoClip.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+NoClip.MouseLeave:Connect(function()
+	NoClip.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+NoClip.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://github.com/Mirgarr/noclip-script-roblox/blob/main/Noclip"))()
+end)
+Freemotes.MouseEnter:Connect(function()
+	Freemotes.BackgroundColor3 = Color3.fromRGB(0,255,0)
+end)
+Freemotes.MouseLeave:Connect(function()
+	Freemotes.BackgroundColor3 = Color3.fromRGB(17,17,17)
+end)
+Freemotes.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
+end)
 
