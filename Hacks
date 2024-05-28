@@ -38,6 +38,7 @@ local JJJ = Instance.new("TextLabel")
 local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
 local Credits_2 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
+
 Hack.ResetOnSpawn = false
 --Properties:
 
@@ -46,7 +47,6 @@ Hack.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Hack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainHolder.Name = "MainHolder"
-MainHolder.Visible = true
 MainHolder.Parent = Hack
 MainHolder.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
 MainHolder.BorderColor3 = Color3.fromRGB(163, 49, 54)
@@ -58,6 +58,7 @@ MainHolder.Image = "rbxassetid://17641355089"
 MainHolder.ImageTransparency = 0.900
 MainHolder.ScaleType = Enum.ScaleType.Tile
 MainHolder.TileSize = UDim2.new(0.0399999991, 0, 0.0399999991, 0)
+
 
 Nerd.Name = "Nerd"
 Nerd.Parent = MainHolder
