@@ -60,7 +60,7 @@ Hack.Name = "Hack"
 Hack.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Hack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-MainHolder.Size = UDim2.new(0, 16,0, 14)
+MainHolder.Size = UDim2.new(0.307002276, 0, 0.035533879, 0)
 MainHolder.Name = "MainHolder"
 MainHolder.Parent = Hack
 MainHolder.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
@@ -72,7 +72,7 @@ MainHolder.Image = "rbxassetid://17641355089"
 MainHolder.ImageTransparency = 0.900
 MainHolder.ScaleType = Enum.ScaleType.Tile
 MainHolder.TileSize = UDim2.new(0.0399999991, 0, 0.0399999991, 0)
- MainHolder:TweenSize(UDim2.new(0.307002276, 0, 0.035533879, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Bounce)
+
 
 
 Nerd.Name = "Nerd"
