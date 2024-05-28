@@ -48,10 +48,7 @@ local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
 local Credits_2 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
 
-local function randomcolor(Bordercolor) 
-local color = math.random(1,255) 
-BorderColor
-end
+
 
 Hack.ResetOnSpawn = false
 --Properties:
@@ -60,7 +57,7 @@ Hack.Name = "Hack"
 Hack.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Hack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-MainHolder.Size = UDim2.new(0.307002276, 0, 0.035533879, 0)
+MainHolder.Size = UDim2.new(0,0,0,0)
 MainHolder.Name = "MainHolder"
 MainHolder.Parent = Hack
 MainHolder.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
@@ -72,6 +69,7 @@ MainHolder.Image = "rbxassetid://17641355089"
 MainHolder.ImageTransparency = 0.900
 MainHolder.ScaleType = Enum.ScaleType.Tile
 MainHolder.TileSize = UDim2.new(0.0399999991, 0, 0.0399999991, 0)
+MainHolder:TweenSize(UDim2.new(0.307002276, 0, 0.035533879, 0),Enum.EasingStyle.Out,Enum.EasingDirection.Bounce,0.5)
 
 
 
@@ -327,25 +325,35 @@ Credits_2.TextScaled = true
 Credits_2.TextSize = 14.000
 Credits_2.TextStrokeTransparency = 0.000
 Credits_2.TextWrapped = true
+while true do
+	wait(1)
+	MainHolder.BorderColor3 = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+	
+end
 
 
 UIAspectRatioConstraint_14.Parent = Credits_2
 UIAspectRatioConstraint_14.AspectRatio = 5.875
 
 Fly.MouseButton1Click:Connect(function()
+Fly.BackGroundColor3 = Color3.FromRGB(0,255,0)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 end)
 FreeEmotes.MouseButton1Click:Connect(function()
+FreeEmotes.BackGroundColor3 = Color3.FromRGB(0,255,0)
 	loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
 end)	
 
 AimLock.MouseButton1Click:Connect(function()
+AimLock.BackGroundColor3 = Color3.FromRGB(0,255,0)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/JJJexploits/Infinite-Yield/main/Aimlock"))()
 end)
 AntiLock.MouseButton1Click:Connect(function()
+AntiLock.BackGroundColor3 = Color3.FromRGB(0,255,0)
 	loadstring(game:HttpGet("https://pastebin.com/raw/wx9xWkGN"))()
 end)
 ESP.MouseButton1Click:Connect(function()
+ESP.BackGroundColor3 = Color3.FromRGB(0,255,0)
 	loadstring(game:HttpGet("https://pastebin.com/raw/7K1Jhmck"))()
 end)
 
