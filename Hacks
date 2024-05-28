@@ -1,4 +1,4 @@
--- Script created by jjj
+\-- Script created by jjj
 -- Version: 3.2
 
 --Anti-cheat
@@ -48,6 +48,11 @@ local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
 local Credits_2 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
 
+local function randomcolor(Bordercolor) 
+local color = math.random(1,255) 
+BorderColor
+end
+
 Hack.ResetOnSpawn = false
 --Properties:
 
@@ -55,6 +60,7 @@ Hack.Name = "Hack"
 Hack.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Hack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
+MainHolder.Size = UDim2.new(0, 16,0, 14)
 MainHolder.Name = "MainHolder"
 MainHolder.Parent = Hack
 MainHolder.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
@@ -62,7 +68,6 @@ MainHolder.BorderColor3 = Color3.fromRGB(163, 49, 54)
 MainHolder.BorderSizePixel = 5
 MainHolder.ClipsDescendants = true
 MainHolder.Position = UDim2.new(0.0107376287, 0, 0.209844559, 0)
-MainHolder.Size = UDim2.new(0.214416429, 0, 0.608808279, 0)
 MainHolder.Image = "rbxassetid://17641355089"
 MainHolder.ImageTransparency = 0.900
 MainHolder.ScaleType = Enum.ScaleType.Tile
@@ -321,6 +326,7 @@ Credits_2.TextScaled = true
 Credits_2.TextSize = 14.000
 Credits_2.TextStrokeTransparency = 0.000
 Credits_2.TextWrapped = true
+MainHolder.Size = MainHolder:TweenSize(UDim.new(0.307002276, 0, 0.035533879, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Bounce)
 
 UIAspectRatioConstraint_14.Parent = Credits_2
 UIAspectRatioConstraint_14.AspectRatio = 5.875
@@ -343,6 +349,12 @@ ESP.MouseButton1Click:Connect(function()
 end)
 
 local UserInputService = game:GetService("UserInputService")
+
+while true do
+	wait(1)
+	MainHolder.BorderColor3 = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+	
+end
 
 
 
