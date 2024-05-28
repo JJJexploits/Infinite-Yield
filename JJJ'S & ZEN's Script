@@ -138,18 +138,15 @@ Intro.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Intro.BorderSizePixel = 0
 Intro.Position = UDim2.new(0.461718023, 0, 0.487046629, 0)
 Intro.Size = UDim2.new(0, 164, 0, 30)
-Intro.Visible = false
+Intro.Visible = true
 Intro.Font = Enum.Font.Unknown
 Intro.Text = "🤓NERD🤓"
 Intro.TextColor3 = Color3.fromRGB(255, 255, 255)
 Intro.TextScaled = true
 Intro.TextSize = 14.000
 Intro.TextWrapped = true
-wait(4)
-Intro.Visible = true
-wait(4)
+task.wait(2) 
 Intro.Visible = false
-wait(4)
 
 --Properties:
 
