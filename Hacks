@@ -72,6 +72,7 @@ MainHolder.Image = "rbxassetid://17641355089"
 MainHolder.ImageTransparency = 0.900
 MainHolder.ScaleType = Enum.ScaleType.Tile
 MainHolder.TileSize = UDim2.new(0.0399999991, 0, 0.0399999991, 0)
+MainHolder.Size = MainHolder:TweenSize(UDim2.new(0.307002276, 0, 0.035533879, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Bounce)
 
 
 Nerd.Name = "Nerd"
@@ -326,7 +327,7 @@ Credits_2.TextScaled = true
 Credits_2.TextSize = 14.000
 Credits_2.TextStrokeTransparency = 0.000
 Credits_2.TextWrapped = true
-MainHolder.Size = MainHolder:TweenSize(UDim.new(0.307002276, 0, 0.035533879, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Bounce)
+
 
 UIAspectRatioConstraint_14.Parent = Credits_2
 UIAspectRatioConstraint_14.AspectRatio = 5.875
