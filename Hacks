@@ -341,7 +341,11 @@ local UserInputService = game:GetService("UserInputService")
 
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
 	if input.KeyCode == Enum.KeyCode.O and not gameProcessed then
-		MainHolder.Visible = not MainHolder.Visible
+		if MainHolder.Visible == true then
+			MainHolder.Visible = false
+		else
+			MainHolder.Visible = true
+		end
 	end
 	
 end)
