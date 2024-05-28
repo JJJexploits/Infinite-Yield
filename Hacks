@@ -38,7 +38,7 @@ local JJJ = Instance.new("TextLabel")
 local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
 local Credits_2 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
-
+Hack.ResetOnSpawn = false
 --Properties:
 
 Hack.Name = "Hack"
@@ -46,6 +46,7 @@ Hack.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Hack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainHolder.Name = "MainHolder"
+MainHolder.
 MainHolder.Parent = Hack
 MainHolder.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
 MainHolder.BorderColor3 = Color3.fromRGB(163, 49, 54)
