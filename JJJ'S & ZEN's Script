@@ -1,0 +1,825 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local JJJZENSHACKCLIENT = Instance.new("ScreenGui")
+local UIListLayout = Instance.new("UIListLayout")
+local Visuals = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local OtherMenu = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local CharacterHolder = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Stuff = Instance.new("Folder")
+local ESP = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local Freecam = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local Freecam_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local Freecam_3 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local DropDownButton = Instance.new("TextButton")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local Misc = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local DropDownButton_2 = Instance.new("TextButton")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local OtherMenu_2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local CharacterHolder_2 = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local Stuff_2 = Instance.new("Folder")
+local AntiLock = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
+local Antiresolver = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
+local AimLock = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
+local SilentAim = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIAspectRatioConstraint_15 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_16 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_17 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_18 = Instance.new("UIAspectRatioConstraint")
+local other = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_19 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local DropDownButton_3 = Instance.new("TextButton")
+local UIAspectRatioConstraint_20 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local OtherMenu_3 = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local CharacterHolder_3 = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local Stuff_3 = Instance.new("Folder")
+local UIAspectRatioConstraint_21 = Instance.new("UIAspectRatioConstraint")
+local Stuff_4 = Instance.new("Folder")
+local Infiniteyield = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local UIAspectRatioConstraint_22 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local Fling = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local UIAspectRatioConstraint_23 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local InfiniteJump = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local UIAspectRatioConstraint_24 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local Infiniteyield_2 = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local UIAspectRatioConstraint_25 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_26 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_27 = Instance.new("UIAspectRatioConstraint")
+local CharacterTopBar = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_28 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local DropDownButton_4 = Instance.new("TextButton")
+local UIAspectRatioConstraint_29 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
+local CharacterMenu = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local CharacterHolder_4 = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local Stuff_5 = Instance.new("Folder")
+local Freemotes = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local UIAspectRatioConstraint_30 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
+local Fly = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local UIAspectRatioConstraint_31 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
+local FreeMacro = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local UIAspectRatioConstraint_32 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
+local NoClip = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local UIAspectRatioConstraint_33 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_34 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_35 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_36 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+JJJZENSHACKCLIENT.Name = "JJJZENSHACKCLIENT"
+JJJZENSHACKCLIENT.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+JJJZENSHACKCLIENT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+JJJZENSHACKCLIENT.ResetOnSpawn = false
+
+UIListLayout.Parent = JJJZENSHACKCLIENT
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0.0399999991, 0)
+
+Visuals.Name = "Visuals"
+Visuals.Parent = JJJZENSHACKCLIENT
+Visuals.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Visuals.BorderColor3 = Color3.fromRGB(79, 39, 86)
+Visuals.BorderSizePixel = 0
+Visuals.Position = UDim2.new(0.0838935599, 0, 0, 0)
+Visuals.Size = UDim2.new(0.100840338, 0, 0.0345423147, 0)
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Visuals
+
+TextLabel.Parent = Visuals
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.066959098, 0, -0.063829802, 0)
+TextLabel.Size = UDim2.new(0.861111104, 0, 1.10000002, 0)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "⭐visuals⭐"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 16.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel
+UITextSizeConstraint.MaxTextSize = 16
+
+UIAspectRatioConstraint.Parent = TextLabel
+UIAspectRatioConstraint.AspectRatio = 4.227
+
+OtherMenu.Name = "OtherMenu"
+OtherMenu.Parent = Visuals
+OtherMenu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OtherMenu.BorderColor3 = Color3.fromRGB(79, 39, 86)
+OtherMenu.BorderSizePixel = 0
+OtherMenu.Position = UDim2.new(-0.00406957557, 0, 1.02499998, 0)
+OtherMenu.Size = UDim2.new(1, 0, 8.77499962, 0)
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = OtherMenu
+
+CharacterHolder.Name = "CharacterHolder"
+CharacterHolder.Parent = OtherMenu
+CharacterHolder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CharacterHolder.BackgroundTransparency = 1.000
+CharacterHolder.BorderColor3 = Color3.fromRGB(79, 39, 86)
+CharacterHolder.BorderSizePixel = 0
+CharacterHolder.Position = UDim2.new(0.0468563512, 0, 0.064886108, 0)
+CharacterHolder.Size = UDim2.new(0.898148119, 0, 0.868945897, 0)
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = CharacterHolder
+
+Stuff.Name = "Stuff"
+Stuff.Parent = CharacterHolder
+
+ESP.Name = "ESP"
+ESP.Parent = Stuff
+ESP.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.0567010306, 0, 0.550819695, 0)
+ESP.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+ESP.Font = Enum.Font.SciFi
+ESP.Text = "💡ESP💡"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+
+UICorner_4.Parent = ESP
+
+UITextSizeConstraint_2.Parent = ESP
+UITextSizeConstraint_2.MaxTextSize = 14
+
+UIAspectRatioConstraint_2.Parent = ESP
+UIAspectRatioConstraint_2.AspectRatio = 4.000
+
+Freecam.Name = "Freecam"
+Freecam.Parent = Stuff
+Freecam.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Freecam.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Freecam.BorderSizePixel = 0
+Freecam.Position = UDim2.new(0.0567010306, 0, 0.295081973, 0)
+Freecam.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+Freecam.Font = Enum.Font.SciFi
+Freecam.Text = "🎥Free-Cam🎥"
+Freecam.TextColor3 = Color3.fromRGB(255, 255, 255)
+Freecam.TextScaled = true
+Freecam.TextSize = 14.000
+Freecam.TextWrapped = true
+
+UICorner_5.Parent = Freecam
+
+UITextSizeConstraint_3.Parent = Freecam
+UITextSizeConstraint_3.MaxTextSize = 14
+
+UIAspectRatioConstraint_3.Parent = Freecam
+UIAspectRatioConstraint_3.AspectRatio = 4.000
+
+Freecam_2.Name = "Freecam"
+Freecam_2.Parent = Stuff
+Freecam_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Freecam_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Freecam_2.BorderSizePixel = 0
+Freecam_2.Position = UDim2.new(0.0567010306, 0, 0.0459016375, 0)
+Freecam_2.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+Freecam_2.Font = Enum.Font.SciFi
+Freecam_2.Text = "🏷️Name-Tags🏷️"
+Freecam_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Freecam_2.TextScaled = true
+Freecam_2.TextSize = 14.000
+Freecam_2.TextWrapped = true
+
+UICorner_6.Parent = Freecam_2
+
+UITextSizeConstraint_4.Parent = Freecam_2
+UITextSizeConstraint_4.MaxTextSize = 14
+
+UIAspectRatioConstraint_4.Parent = Freecam_2
+UIAspectRatioConstraint_4.AspectRatio = 4.000
+
+Freecam_3.Name = "Freecam"
+Freecam_3.Parent = Stuff
+Freecam_3.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Freecam_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Freecam_3.BorderSizePixel = 0
+Freecam_3.Position = UDim2.new(0.0567010306, 0, 0.790163934, 0)
+Freecam_3.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+Freecam_3.Font = Enum.Font.SciFi
+Freecam_3.Text = "💾Tracing💾"
+Freecam_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Freecam_3.TextScaled = true
+Freecam_3.TextSize = 14.000
+Freecam_3.TextWrapped = true
+
+UICorner_7.Parent = Freecam_3
+
+UITextSizeConstraint_5.Parent = Freecam_3
+UITextSizeConstraint_5.MaxTextSize = 14
+
+UIAspectRatioConstraint_5.Parent = Freecam_3
+UIAspectRatioConstraint_5.AspectRatio = 4.000
+
+UIAspectRatioConstraint_6.Parent = CharacterHolder
+UIAspectRatioConstraint_6.AspectRatio = 0.636
+
+UIAspectRatioConstraint_7.Parent = OtherMenu
+UIAspectRatioConstraint_7.AspectRatio = 0.615
+
+DropDownButton.Name = "DropDownButton"
+DropDownButton.Parent = Visuals
+DropDownButton.BackgroundColor3 = Color3.fromRGB(255, 52, 191)
+DropDownButton.BackgroundTransparency = 1.000
+DropDownButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DropDownButton.BorderSizePixel = 0
+DropDownButton.Position = UDim2.new(0.835648119, 0, 0.112499997, 0)
+DropDownButton.Rotation = 90.000
+DropDownButton.Size = UDim2.new(0.120370373, 0, 0.774999976, 0)
+DropDownButton.Font = Enum.Font.SciFi
+DropDownButton.Text = ">"
+DropDownButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+DropDownButton.TextScaled = true
+DropDownButton.TextSize = 28.000
+DropDownButton.TextWrapped = true
+
+UITextSizeConstraint_6.Parent = DropDownButton
+UITextSizeConstraint_6.MaxTextSize = 28
+
+UIAspectRatioConstraint_8.Parent = DropDownButton
+UIAspectRatioConstraint_8.AspectRatio = 0.839
+
+UIAspectRatioConstraint_9.Parent = Visuals
+UIAspectRatioConstraint_9.AspectRatio = 5.400
+
+Misc.Name = "Misc"
+Misc.Parent = JJJZENSHACKCLIENT
+Misc.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Misc.BorderColor3 = Color3.fromRGB(79, 39, 86)
+Misc.BorderSizePixel = 0
+Misc.Position = UDim2.new(0.0838935599, 0, 0, 0)
+Misc.Size = UDim2.new(0.100840338, 0, 0.0345423147, 0)
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = Misc
+
+TextLabel_2.Parent = Misc
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.066959098, 0, -0.063829802, 0)
+TextLabel_2.Size = UDim2.new(0.861111104, 0, 1.10000002, 0)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "⭐misc⭐"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 16.000
+TextLabel_2.TextWrapped = true
+
+UIAspectRatioConstraint_10.Parent = TextLabel_2
+UIAspectRatioConstraint_10.AspectRatio = 4.227
+
+DropDownButton_2.Name = "DropDownButton"
+DropDownButton_2.Parent = Misc
+DropDownButton_2.BackgroundColor3 = Color3.fromRGB(255, 52, 191)
+DropDownButton_2.BackgroundTransparency = 1.000
+DropDownButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DropDownButton_2.BorderSizePixel = 0
+DropDownButton_2.Position = UDim2.new(0.835648119, 0, 0.112499997, 0)
+DropDownButton_2.Rotation = 90.000
+DropDownButton_2.Size = UDim2.new(0.120370373, 0, 0.774999976, 0)
+DropDownButton_2.Font = Enum.Font.SciFi
+DropDownButton_2.Text = ">"
+DropDownButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+DropDownButton_2.TextSize = 28.000
+
+UIAspectRatioConstraint_11.Parent = DropDownButton_2
+UIAspectRatioConstraint_11.AspectRatio = 0.839
+
+OtherMenu_2.Name = "OtherMenu"
+OtherMenu_2.Parent = Misc
+OtherMenu_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OtherMenu_2.BorderColor3 = Color3.fromRGB(79, 39, 86)
+OtherMenu_2.BorderSizePixel = 0
+OtherMenu_2.Position = UDim2.new(-0.00406957557, 0, 1.02499998, 0)
+OtherMenu_2.Size = UDim2.new(1, 0, 8.77499962, 0)
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = OtherMenu_2
+
+CharacterHolder_2.Name = "CharacterHolder"
+CharacterHolder_2.Parent = OtherMenu_2
+CharacterHolder_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CharacterHolder_2.BackgroundTransparency = 1.000
+CharacterHolder_2.BorderColor3 = Color3.fromRGB(79, 39, 86)
+CharacterHolder_2.BorderSizePixel = 0
+CharacterHolder_2.Position = UDim2.new(0.0468563512, 0, 0.064886108, 0)
+CharacterHolder_2.Size = UDim2.new(0.898148119, 0, 0.868945897, 0)
+
+UICorner_10.CornerRadius = UDim.new(0, 4)
+UICorner_10.Parent = CharacterHolder_2
+
+Stuff_2.Name = "Stuff"
+Stuff_2.Parent = CharacterHolder_2
+
+AntiLock.Name = "Anti-Lock"
+AntiLock.Parent = Stuff_2
+AntiLock.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+AntiLock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiLock.BorderSizePixel = 0
+AntiLock.Position = UDim2.new(0.057130795, 0, 0.0497582108, 0)
+AntiLock.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+AntiLock.Font = Enum.Font.SciFi
+AntiLock.Text = "😡Anti-Lock😡"
+AntiLock.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiLock.TextSize = 14.000
+AntiLock.TextWrapped = true
+
+UICorner_11.Parent = AntiLock
+
+UIAspectRatioConstraint_12.Parent = AntiLock
+UIAspectRatioConstraint_12.AspectRatio = 4.000
+
+Antiresolver.Name = "Antiresolver"
+Antiresolver.Parent = Stuff_2
+Antiresolver.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Antiresolver.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Antiresolver.BorderSizePixel = 0
+Antiresolver.Position = UDim2.new(0.0622854345, 0, 0.292381167, 0)
+Antiresolver.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+Antiresolver.Font = Enum.Font.SciFi
+Antiresolver.Text = "🖕Anti-Resolver🖕"
+Antiresolver.TextColor3 = Color3.fromRGB(255, 255, 255)
+Antiresolver.TextSize = 14.000
+Antiresolver.TextWrapped = true
+
+UICorner_12.Parent = Antiresolver
+
+UIAspectRatioConstraint_13.Parent = Antiresolver
+UIAspectRatioConstraint_13.AspectRatio = 4.000
+
+AimLock.Name = "AimLock"
+AimLock.Parent = Stuff_2
+AimLock.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+AimLock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimLock.BorderSizePixel = 0
+AimLock.Position = UDim2.new(0.0618556701, 0, 0.547540963, 0)
+AimLock.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+AimLock.Font = Enum.Font.SciFi
+AimLock.Text = "🎯Aim-Lock🎯"
+AimLock.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimLock.TextSize = 14.000
+AimLock.TextWrapped = true
+
+UICorner_13.Parent = AimLock
+
+UIAspectRatioConstraint_14.Parent = AimLock
+UIAspectRatioConstraint_14.AspectRatio = 4.000
+
+SilentAim.Name = "SilentAim"
+SilentAim.Parent = Stuff_2
+SilentAim.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+SilentAim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SilentAim.BorderSizePixel = 0
+SilentAim.Position = UDim2.new(0.0618556701, 0, 0.790163934, 0)
+SilentAim.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+SilentAim.Font = Enum.Font.SciFi
+SilentAim.Text = "🔫Silent-Aim🔫"
+SilentAim.TextColor3 = Color3.fromRGB(255, 255, 255)
+SilentAim.TextSize = 14.000
+SilentAim.TextWrapped = true
+
+UICorner_14.Parent = SilentAim
+
+UIAspectRatioConstraint_15.Parent = SilentAim
+UIAspectRatioConstraint_15.AspectRatio = 4.000
+
+UIAspectRatioConstraint_16.Parent = CharacterHolder_2
+UIAspectRatioConstraint_16.AspectRatio = 0.636
+
+UIAspectRatioConstraint_17.Parent = OtherMenu_2
+UIAspectRatioConstraint_17.AspectRatio = 0.615
+
+UIAspectRatioConstraint_18.Parent = Misc
+UIAspectRatioConstraint_18.AspectRatio = 5.400
+
+other.Name = "other"
+other.Parent = JJJZENSHACKCLIENT
+other.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+other.BorderColor3 = Color3.fromRGB(79, 39, 86)
+other.BorderSizePixel = 0
+other.Position = UDim2.new(0.0838935599, 0, 0, 0)
+other.Size = UDim2.new(0.100840338, 0, 0.0345423147, 0)
+
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = other
+
+TextLabel_3.Parent = other
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.066959098, 0, -0.063829802, 0)
+TextLabel_3.Size = UDim2.new(0.861111104, 0, 1.10000002, 0)
+TextLabel_3.Font = Enum.Font.SciFi
+TextLabel_3.Text = "⭐others⭐"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 16.000
+TextLabel_3.TextWrapped = true
+
+UIAspectRatioConstraint_19.Parent = TextLabel_3
+UIAspectRatioConstraint_19.AspectRatio = 4.227
+
+UITextSizeConstraint_7.Parent = TextLabel_3
+UITextSizeConstraint_7.MaxTextSize = 16
+
+DropDownButton_3.Name = "DropDownButton"
+DropDownButton_3.Parent = other
+DropDownButton_3.BackgroundColor3 = Color3.fromRGB(255, 52, 191)
+DropDownButton_3.BackgroundTransparency = 1.000
+DropDownButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DropDownButton_3.BorderSizePixel = 0
+DropDownButton_3.Position = UDim2.new(0.835648119, 0, 0.112499997, 0)
+DropDownButton_3.Rotation = 90.000
+DropDownButton_3.Size = UDim2.new(0.120370373, 0, 0.774999976, 0)
+DropDownButton_3.Font = Enum.Font.SciFi
+DropDownButton_3.Text = ">"
+DropDownButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+DropDownButton_3.TextScaled = true
+DropDownButton_3.TextSize = 28.000
+DropDownButton_3.TextWrapped = true
+
+UIAspectRatioConstraint_20.Parent = DropDownButton_3
+UIAspectRatioConstraint_20.AspectRatio = 0.839
+
+UITextSizeConstraint_8.Parent = DropDownButton_3
+UITextSizeConstraint_8.MaxTextSize = 28
+
+OtherMenu_3.Name = "OtherMenu"
+OtherMenu_3.Parent = other
+OtherMenu_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OtherMenu_3.BorderColor3 = Color3.fromRGB(79, 39, 86)
+OtherMenu_3.BorderSizePixel = 0
+OtherMenu_3.Position = UDim2.new(-0.00406957557, 0, 1.02499998, 0)
+OtherMenu_3.Size = UDim2.new(1, 0, 8.77499962, 0)
+
+UICorner_16.CornerRadius = UDim.new(0, 4)
+UICorner_16.Parent = OtherMenu_3
+
+CharacterHolder_3.Name = "CharacterHolder"
+CharacterHolder_3.Parent = OtherMenu_3
+CharacterHolder_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CharacterHolder_3.BackgroundTransparency = 1.000
+CharacterHolder_3.BorderColor3 = Color3.fromRGB(79, 39, 86)
+CharacterHolder_3.BorderSizePixel = 0
+CharacterHolder_3.Position = UDim2.new(0.0468563512, 0, 0.064886108, 0)
+CharacterHolder_3.Size = UDim2.new(0.898148119, 0, 0.868945897, 0)
+
+UICorner_17.CornerRadius = UDim.new(0, 4)
+UICorner_17.Parent = CharacterHolder_3
+
+Stuff_3.Name = "Stuff"
+Stuff_3.Parent = CharacterHolder_3
+
+UIAspectRatioConstraint_21.Parent = CharacterHolder_3
+UIAspectRatioConstraint_21.AspectRatio = 0.636
+
+Stuff_4.Name = "Stuff"
+Stuff_4.Parent = OtherMenu_3
+
+Infiniteyield.Name = "Infiniteyield"
+Infiniteyield.Parent = Stuff_4
+Infiniteyield.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Infiniteyield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Infiniteyield.BorderSizePixel = 0
+Infiniteyield.Position = UDim2.new(0.0983677581, 0, 0.108513027, 0)
+Infiniteyield.Size = UDim2.new(0.796296299, 0, 0.122507125, 0)
+Infiniteyield.Font = Enum.Font.SciFi
+Infiniteyield.Text = "👿Infinite-Yield👿"
+Infiniteyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+Infiniteyield.TextScaled = true
+Infiniteyield.TextSize = 14.000
+Infiniteyield.TextWrapped = true
+
+UICorner_18.Parent = Infiniteyield
+
+UIAspectRatioConstraint_22.Parent = Infiniteyield
+UIAspectRatioConstraint_22.AspectRatio = 4.000
+
+UITextSizeConstraint_9.Parent = Infiniteyield
+UITextSizeConstraint_9.MaxTextSize = 14
+
+Fling.Name = "Fling"
+Fling.Parent = Stuff_4
+Fling.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Fling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fling.BorderSizePixel = 0
+Fling.Position = UDim2.new(0.0983677581, 0, 0.74953866, 0)
+Fling.Size = UDim2.new(0.796296299, 0, 0.122507125, 0)
+Fling.Font = Enum.Font.SciFi
+Fling.Text = "👨‍🚀Fling👨‍🚀"
+Fling.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fling.TextScaled = true
+Fling.TextSize = 14.000
+Fling.TextWrapped = true
+
+UICorner_19.Parent = Fling
+
+UIAspectRatioConstraint_23.Parent = Fling
+UIAspectRatioConstraint_23.AspectRatio = 4.000
+
+UITextSizeConstraint_10.Parent = Fling
+UITextSizeConstraint_10.MaxTextSize = 14
+
+InfiniteJump.Name = "InfiniteJump"
+InfiniteJump.Parent = Stuff_4
+InfiniteJump.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+InfiniteJump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteJump.BorderSizePixel = 0
+InfiniteJump.Position = UDim2.new(0.0983677581, 0, 0.541561484, 0)
+InfiniteJump.Size = UDim2.new(0.796296299, 0, 0.122507125, 0)
+InfiniteJump.Font = Enum.Font.SciFi
+InfiniteJump.Text = "🦘Infinite-Jump🦘"
+InfiniteJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteJump.TextScaled = true
+InfiniteJump.TextSize = 14.000
+InfiniteJump.TextWrapped = true
+
+UICorner_20.Parent = InfiniteJump
+
+UIAspectRatioConstraint_24.Parent = InfiniteJump
+UIAspectRatioConstraint_24.AspectRatio = 4.000
+
+UITextSizeConstraint_11.Parent = InfiniteJump
+UITextSizeConstraint_11.MaxTextSize = 14
+
+Infiniteyield_2.Name = "Infiniteyield"
+Infiniteyield_2.Parent = Stuff_4
+Infiniteyield_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Infiniteyield_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Infiniteyield_2.BorderSizePixel = 0
+Infiniteyield_2.Position = UDim2.new(0.102997392, 0, 0.316490233, 0)
+Infiniteyield_2.Size = UDim2.new(0.796296299, 0, 0.122507125, 0)
+Infiniteyield_2.Font = Enum.Font.SciFi
+Infiniteyield_2.Text = "🎩Teleport🎩"
+Infiniteyield_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Infiniteyield_2.TextScaled = true
+Infiniteyield_2.TextSize = 14.000
+Infiniteyield_2.TextWrapped = true
+
+UICorner_21.Parent = Infiniteyield_2
+
+UIAspectRatioConstraint_25.Parent = Infiniteyield_2
+UIAspectRatioConstraint_25.AspectRatio = 4.000
+
+UITextSizeConstraint_12.Parent = Infiniteyield_2
+UITextSizeConstraint_12.MaxTextSize = 14
+
+UIAspectRatioConstraint_26.Parent = OtherMenu_3
+UIAspectRatioConstraint_26.AspectRatio = 0.615
+
+UIAspectRatioConstraint_27.Parent = other
+UIAspectRatioConstraint_27.AspectRatio = 5.400
+
+CharacterTopBar.Name = "CharacterTopBar"
+CharacterTopBar.Parent = JJJZENSHACKCLIENT
+CharacterTopBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CharacterTopBar.BorderColor3 = Color3.fromRGB(79, 39, 86)
+CharacterTopBar.BorderSizePixel = 0
+CharacterTopBar.Position = UDim2.new(0.0838935599, 0, 0, 0)
+CharacterTopBar.Size = UDim2.new(0.100840338, 0, 0.0345423147, 0)
+
+UICorner_22.CornerRadius = UDim.new(0, 4)
+UICorner_22.Parent = CharacterTopBar
+
+TextLabel_4.Parent = CharacterTopBar
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.066959098, 0, -0.063829802, 0)
+TextLabel_4.Size = UDim2.new(0.861111045, 0, 1.10000002, 0)
+TextLabel_4.Font = Enum.Font.SciFi
+TextLabel_4.Text = "⭐character⭐"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 16.000
+TextLabel_4.TextWrapped = true
+
+UIAspectRatioConstraint_28.Parent = TextLabel_4
+UIAspectRatioConstraint_28.AspectRatio = 4.227
+
+UITextSizeConstraint_13.Parent = TextLabel_4
+UITextSizeConstraint_13.MaxTextSize = 16
+
+DropDownButton_4.Name = "DropDownButton"
+DropDownButton_4.Parent = CharacterTopBar
+DropDownButton_4.BackgroundColor3 = Color3.fromRGB(255, 52, 191)
+DropDownButton_4.BackgroundTransparency = 1.000
+DropDownButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DropDownButton_4.BorderSizePixel = 0
+DropDownButton_4.Position = UDim2.new(0.835648119, 0, 0.112499997, 0)
+DropDownButton_4.Rotation = 90.000
+DropDownButton_4.Size = UDim2.new(0.120370373, 0, 0.774999976, 0)
+DropDownButton_4.Font = Enum.Font.SciFi
+DropDownButton_4.Text = ">"
+DropDownButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+DropDownButton_4.TextScaled = true
+DropDownButton_4.TextSize = 28.000
+DropDownButton_4.TextWrapped = true
+
+UIAspectRatioConstraint_29.Parent = DropDownButton_4
+UIAspectRatioConstraint_29.AspectRatio = 0.839
+
+UITextSizeConstraint_14.Parent = DropDownButton_4
+UITextSizeConstraint_14.MaxTextSize = 28
+
+CharacterMenu.Name = "CharacterMenu"
+CharacterMenu.Parent = CharacterTopBar
+CharacterMenu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CharacterMenu.BorderColor3 = Color3.fromRGB(79, 39, 86)
+CharacterMenu.BorderSizePixel = 0
+CharacterMenu.Position = UDim2.new(-0.00406957557, 0, 1.02499998, 0)
+CharacterMenu.Size = UDim2.new(1, 0, 8.77499962, 0)
+
+UICorner_23.CornerRadius = UDim.new(0, 4)
+UICorner_23.Parent = CharacterMenu
+
+CharacterHolder_4.Name = "CharacterHolder"
+CharacterHolder_4.Parent = CharacterMenu
+CharacterHolder_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CharacterHolder_4.BackgroundTransparency = 1.000
+CharacterHolder_4.BorderColor3 = Color3.fromRGB(79, 39, 86)
+CharacterHolder_4.BorderSizePixel = 0
+CharacterHolder_4.Position = UDim2.new(0.0468563512, 0, 0.064886108, 0)
+CharacterHolder_4.Size = UDim2.new(0.898148119, 0, 0.868945897, 0)
+
+UICorner_24.CornerRadius = UDim.new(0, 4)
+UICorner_24.Parent = CharacterHolder_4
+
+Stuff_5.Name = "Stuff"
+Stuff_5.Parent = CharacterHolder_4
+
+Freemotes.Name = "Freemotes"
+Freemotes.Parent = Stuff_5
+Freemotes.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Freemotes.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Freemotes.BorderSizePixel = 0
+Freemotes.Position = UDim2.new(0.0567010306, 0, 0.295081973, 0)
+Freemotes.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+Freemotes.Font = Enum.Font.SciFi
+Freemotes.Text = "🎶Free-emotes🎶"
+Freemotes.TextColor3 = Color3.fromRGB(255, 255, 255)
+Freemotes.TextScaled = true
+Freemotes.TextSize = 14.000
+Freemotes.TextWrapped = true
+
+UICorner_25.Parent = Freemotes
+
+UIAspectRatioConstraint_30.Parent = Freemotes
+UIAspectRatioConstraint_30.AspectRatio = 4.000
+
+UITextSizeConstraint_15.Parent = Freemotes
+UITextSizeConstraint_15.MaxTextSize = 14
+
+Fly.Name = "Fly"
+Fly.Parent = Stuff_5
+Fly.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.0567010306, 0, 0.550819695, 0)
+Fly.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+Fly.Font = Enum.Font.SciFi
+Fly.Text = "✈️Fly✈️"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+UICorner_26.Parent = Fly
+
+UIAspectRatioConstraint_31.Parent = Fly
+UIAspectRatioConstraint_31.AspectRatio = 4.000
+
+UITextSizeConstraint_16.Parent = Fly
+UITextSizeConstraint_16.MaxTextSize = 14
+
+FreeMacro.Name = "FreeMacro"
+FreeMacro.Parent = Stuff_5
+FreeMacro.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+FreeMacro.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FreeMacro.BorderSizePixel = 0
+FreeMacro.Position = UDim2.new(0.0567010306, 0, 0.790163934, 0)
+FreeMacro.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+FreeMacro.Font = Enum.Font.SciFi
+FreeMacro.Text = "🏃‍♂️Free-macro🏃‍♂️"
+FreeMacro.TextColor3 = Color3.fromRGB(255, 255, 255)
+FreeMacro.TextScaled = true
+FreeMacro.TextSize = 14.000
+FreeMacro.TextWrapped = true
+
+UICorner_27.Parent = FreeMacro
+
+UIAspectRatioConstraint_32.Parent = FreeMacro
+UIAspectRatioConstraint_32.AspectRatio = 4.000
+
+UITextSizeConstraint_17.Parent = FreeMacro
+UITextSizeConstraint_17.MaxTextSize = 14
+
+NoClip.Name = "NoClip"
+NoClip.Parent = Stuff_5
+NoClip.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+NoClip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NoClip.BorderSizePixel = 0
+NoClip.Position = UDim2.new(0.0622854345, 0, 0.0472080931, 0)
+NoClip.Size = UDim2.new(0.886597931, 0, 0.140983611, 0)
+NoClip.Font = Enum.Font.SciFi
+NoClip.Text = "🎇No-Clip🎇"
+NoClip.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoClip.TextScaled = true
+NoClip.TextSize = 14.000
+NoClip.TextWrapped = true
+
+UICorner_28.Parent = NoClip
+
+UIAspectRatioConstraint_33.Parent = NoClip
+UIAspectRatioConstraint_33.AspectRatio = 4.000
+
+UITextSizeConstraint_18.Parent = NoClip
+UITextSizeConstraint_18.MaxTextSize = 14
+
+UIAspectRatioConstraint_34.Parent = CharacterHolder_4
+UIAspectRatioConstraint_34.AspectRatio = 0.636
+
+UIAspectRatioConstraint_35.Parent = CharacterMenu
+UIAspectRatioConstraint_35.AspectRatio = 0.615
+
+UIAspectRatioConstraint_36.Parent = CharacterTopBar
+UIAspectRatioConstraint_36.AspectRatio = 5.400
